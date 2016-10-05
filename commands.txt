@@ -1,24 +1,23 @@
 
-
 Commands
 =======================================================================================================================
 	--------------------------------------------
 	--------------------------------------------
-	git add .										- adds every file/folder (.)
+	git add .					- adds every file/folder (.)
 	--------------------------------------------
-	git commit -m "some information"				- local commit with "information" as comment using every added file
+	git commit -m "some information"		- local commit with "information" as comment using every added file
 	--------------------------------------------
-	git status										- local status of changes before commit
-	--------------------------------------------
-	--------------------------------------------
-	git push origin master							- uploads to master branch via origin remote
-	--------------------------------------------
-	git pull origin master							- downloads the master branch via origin remote
+	git status					- local status of changes before commit
 	--------------------------------------------
 	--------------------------------------------
-	git branch iss53								- create branch "iss53"
+	git push origin master				- uploads to master branch via origin remote
 	--------------------------------------------
-	git checkout iss53								- enter branch "iss53"
+	git pull origin master				- downloads the master branch via origin remote
+	--------------------------------------------
+	--------------------------------------------
+	git branch iss53				- create branch "iss53"
+	--------------------------------------------
+	git checkout iss53				- enter branch "iss53"
 	--------------------------------------------
 	--------------------------------------------
 	
@@ -26,17 +25,17 @@ Setup Repository (1x / Repository)
 =======================================================================================================================
 	--------------------------------------------
 	git remote add origin
-	git@github.com:username/repository			- adds remote "origin" connecting to repository (SSH)
+	git@github.com:username/repository		- adds remote "origin" connecting to repository (SSH)
 	--------------------------------------------
-	git init									- creates a repository (selected folder)
+	git init					- creates a repository (selected folder)
 	--------------------------------------------
 	
 Setup PC for Github (1x / PC)
 =======================================================================================================================
 	--------------------------------------------
-	ssh-keygen -t rsa -C "mail@adresse.com"		- Generiert ein SSH-Key
-	--> [Enter]									- Den Public-Key (id_rsa.pub) in Github einfügen
+	ssh-keygen -t rsa -C "mail@adresse.com"		- Generiert SSH-Keys (Private & Public Key)
+	--> [Enter]					  Den Public-Key (id_rsa.pub) in Github einfügen
 	--> Password
 	--------------------------------------------
-	ssh -T git@github.com						- Test
+	ssh -T git@github.com				- Test, ob erfolgreich
 	--------------------------------------------
